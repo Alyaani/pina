@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Grocery Shop - Home</title>
+  <link rel="stylesheet" type="text/css" href="styles1.css">
+</head>
+<body>
+  <header>
+    <h1>Afrina's Grocery Shop</h1>
+    <nav>
+      <ul>
+          <li><a href="Assignment1.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+  </header>
+  
+
+<body>
+    <h2>Product</h2>
+    <section class="product">
+    <table border="1" class="center-table">
+            <tr>
+              <th>NAME</th>
+              <th>PRODUCT</th>
+              <th>PRICE</th>
+              <th>Cart</th>
+            </tr>
+            <tr>
+                <td>
+                <div class="product">
+                    <h3>Carrot</h3></td>
+                    <td><img src="carrot.jpg" alt="Product Image" width="250" height="250"></td>
+                    <td><p id="product-price">RM0.90</p>
+                    <button onclick="addToCart('Carrot',0.90)">Add to Cart</button>
+                    <button onclick="cancelItem('Carrot')">Cancel Item</button>
+                  </td> 
+
+                  <td rowspan="8">
+                    <div class="cart">
+                      <h2>Cart</h2>
+                      <ul id="cart-list"></ul>
+                      <p id="total-price"></p>
+                      <button onclick="buying()"><a href="checkout.html">purchase</a></button>
+     
+                    </div>
+                    </td>
+                  </div>
+                  </tr> 
+
+                  <tr>
+                  <td>
+                    <div class="product">
+                        <h3>Sawi</h3></td>
+                        <td><img src="sawi.jpg" alt="Product Image" width="250" height="250"></td>
+                        <td><p id="product-price">RM2.90</p>
+                        <button onclick="addToCart('Sawi',2.90)">Add to Cart</button>
+                        <button onclick="cancelItem('Sawi')">Cancel Item</button>
+                    </div>  
+                  </td>
+                  </tr>
+
+                <tr>
+                  <td>
+                    <div class="product">
+                        <h3>Bayam</h3></td>
+                        <td><img src="spinach.jfif" alt="Product Image" width="250" height="250"></td>
+                        <td><p id="product-price">RM2.90</p>
+                        <button onclick="addToCart('Bayam',2.90)">Add to Cart</button>
+                        <button onclick="cancelItem('Bayam')">Cancel Item</button>
+                    </div>  
+                  </td>
+                </tr>
+            
+  
+                <tr>
+                <td>
+                <div class="product">
+                    <h3>Ramly Chicken Burger</h3></td>
+                    <td><img src="chicken.jpg" alt="Product Image" width="250" height="250"></td>
+                    <td><p id="product-price">RM9.50/g</p>
+                    <button onclick="addToCart('Ramly Chicken Burger',9.50)">Add to Cart</button>
+                    <button onclick="cancelItem('Ramly Chicken Burger')">Cancel Item</button>
+                  </div> 
+                  </td> 
+                  </tr>
+
+                  <tr>
+                  <td>
+                    <div class="product">
+                        <h3>Sosej</h3></td>
+                        <td><img src="sosej.png" alt="Product Image" width="250" height="250"></td>
+                        <td><p id="product-price">RM14.90</p>
+                        <button onclick="addToCart('Sosej',14.90)">Add to Cart</button>
+                      <button onclick="cancelItem('Sosej')">Cancel Item</button>
+                  </div>  
+                  </td>
+                </tr>
+
+                  <tr>
+                  <th>
+                    <div class="product">
+                        <h3>Ramly Minced Beef (Lembu Kisar)</h3></td>
+                        <td><img src="lembu.jpeg" alt="Product Image" width="250" height="250"></td>
+                        <td><p id="product-price">RM11.90</p>
+                        <button onclick="addToCart('Ramly Minced Beef (Lembu Kisar)',11.90)">Add to Cart</button>
+                        <button onclick="cancelItem('Ramly Minced Beef (Lembu Kisar)')">Cancel Item</button>
+                  </div>  
+                  </th>
+               </tr>
+    
+            <tr>
+                <td>
+                <div class="product">
+                    <h3>Cheese</h3></td>
+                    <td><img src="cheese.jpeg" alt="Product Image" width="250" height="250"></td>
+                    <td><p id="product-price">RM10.00</p>
+                    <button onclick="addToCart('cheese',10.00)">Add to Cart</button>
+                    <button onclick="cancelItem('cheese')">Cancel Item</button>
+              </div>  
+              </td>
+              </tr>
+            
+
+                <tr>
+                <td>
+                    <div class="product">
+                      <h3>Milk</h3></td>
+                      <td><img src="milk.jpg" alt="Product Image" width="250" height="250"></td>
+                      <td><p id="product-price">RM5.00</p>
+                      <button onclick="addToCart('milk',5.00)">Add to Cart</button>
+                      <button onclick="cancelItem('milk')">Cancel Item</button>
+                    </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="product">
+                    <h3>Yogurt</h3></td>
+                    <td> <img src="yogurt.png" alt="Product Image" width="250" height="250"></td>
+                    <td><p id="product-price">RM5.00</p>
+                    <button onclick="addToCart('Yogurt',5.00)">Add to Cart</button>
+                    <button onclick="cancelItem('Yogurt')">Cancel Item</button>
+                    </div>
+              </td>
+            </tr>
+
+    </section>
+    </table>
+
+    <footer>
+      <p>&copy; 2023 My Grocery Shop. All rights reserved.</p>
+    </footer>
+  
+    <script src="script1.js"></script>
+
+  
+</body>
+</html>
